@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/freecodecamp-frontend/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/freecodecamp-frontend/static/js/main.991eae6a.chunk.js",
+    "main.js.map": "/freecodecamp-frontend/static/js/main.991eae6a.chunk.js.map",
+    "runtime-main.js": "/freecodecamp-frontend/static/js/runtime-main.f9f595ba.js",
+    "runtime-main.js.map": "/freecodecamp-frontend/static/js/runtime-main.f9f595ba.js.map",
+    "static/js/2.bac7ed7d.chunk.js": "/freecodecamp-frontend/static/js/2.bac7ed7d.chunk.js",
+    "static/js/2.bac7ed7d.chunk.js.map": "/freecodecamp-frontend/static/js/2.bac7ed7d.chunk.js.map",
+    "static/js/3.b83c41f3.chunk.js": "/freecodecamp-frontend/static/js/3.b83c41f3.chunk.js",
+    "static/js/3.b83c41f3.chunk.js.map": "/freecodecamp-frontend/static/js/3.b83c41f3.chunk.js.map",
+    "index.html": "/freecodecamp-frontend/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/freecodecamp-frontend/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.bac7ed7d.chunk.js.LICENSE.txt": "/freecodecamp-frontend/static/js/2.bac7ed7d.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/freecodecamp-frontend/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f9f595ba.js",
+    "static/js/2.bac7ed7d.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.991eae6a.chunk.js"
+  ]
+}
