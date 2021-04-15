@@ -1,0 +1,27 @@
+@import '../variables.scss';
+.toolbar{
+    display: flex;
+    background-color: darken($primary-color, 35%);
+    width: 100%;
+    color: lighten($primary-color, 35%);
+    justify-content: space-between;
+    button{
+        padding: 1em;
+        text-transform: uppercase;
+        background-color: lighten($primary-color, 40%);
+        color: darken($primary-color, 20%);
+        font-weight: 700;
+        font-size: 1.1em;
+        border-radius: 10px;
+        outline: none;
+        appearance: none;
+        border: 0px;
+        align-self: center;
+        justify-self:flex-end;
+        transition: 0.2s;
+        &:hover{
+            background-color: darken($primary-color, 20%);
+            color: lighten($primary-color, 40%);
+        }
+    }
+}

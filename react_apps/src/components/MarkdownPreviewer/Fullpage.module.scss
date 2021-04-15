@@ -1,0 +1,11 @@
+@import '../variables.scss';
+.fullpage{
+    min-height: 100vh;
+    background-color: lighten($primary-color, 50%);
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}

@@ -1,0 +1,75 @@
+@import '../variables.scss';
+.markdown{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: lighten($primary-color, 48%);
+    border-radius: 10px;
+    padding: 1em;    
+    color: darken($primary-color,40%);
+    h1 ,
+    h2 ,
+    h3 ,
+    h4 ,
+    h5 ,
+    h6  {
+        color: darken($primary-color, 40%);
+        vertical-align: middle;
+    }
+    @for $i from 1 through 6{
+        h#{$i}{
+            font-weight: 120 * (7 - $i);
+            font-size: $base-font-size + $h-inc * (7 - $i);
+        }
+
+    }
+    h1:after{
+        display: block;
+        content: '';
+        border-bottom: 2px solid $primary-color;
+        border-radius: 10px;
+        margin-top: 0.09em;
+        width:100%; 
+    }
+    code{
+        background-color: lighten(desaturate($primary-color,20%), 40%);
+        border-radius: 5px;
+        display: inline-block;
+        padding: 0.2em;
+        border: 1px solid lighten($primary-color, 30%);
+        margin: 0.5em 0 0.5em 0;
+        font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+        box-shadow: 0 2px 4px lighten($primary-color,30%);
+    }
+    tr{
+        width: 100%;
+        &:nth-child(odd){
+            background-color: lighten($primary-color, 30%);
+        }
+        &:nth-child(even){
+            background-color: lighten($primary-color, 10%);
+        }
+        margin: 0;
+    }
+    th{
+        background-color: darken($primary-color,40%);
+        color: lighten($primary-color, 40%);
+    }
+    td{
+        padding: 0.8em;
+        border-bottom: 1px solid $primary-color;
+    }
+    table{
+        margin: 0.5em 0 0.5em 0;
+        border-top: 1px solid $primary-color;
+        border-bottom: 1px solid $primary-color;
+        padding: 0.5em;
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+    }
+    height: 100%;
+    blockquote{
+        background-color: lighten(desaturate($primary-color,50%), 30%);
+        border-left: 0.5em solid gray;
+        padding: 0.5em;
+    }
+}
