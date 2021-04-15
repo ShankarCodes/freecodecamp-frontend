@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/freecodecamp-frontend/static/css/main.409cb023.chunk.css",
-    "main.js": "/freecodecamp-frontend/static/js/main.9b6b3716.chunk.js",
-    "main.js.map": "/freecodecamp-frontend/static/js/main.9b6b3716.chunk.js.map",
-    "runtime-main.js": "/freecodecamp-frontend/static/js/runtime-main.42d5c4d4.js",
-    "runtime-main.js.map": "/freecodecamp-frontend/static/js/runtime-main.42d5c4d4.js.map",
-    "static/js/2.e53c13d7.chunk.js": "/freecodecamp-frontend/static/js/2.e53c13d7.chunk.js",
-    "static/js/2.e53c13d7.chunk.js.map": "/freecodecamp-frontend/static/js/2.e53c13d7.chunk.js.map",
-    "static/js/3.6d5c8107.chunk.js": "/freecodecamp-frontend/static/js/3.6d5c8107.chunk.js",
-    "static/js/3.6d5c8107.chunk.js.map": "/freecodecamp-frontend/static/js/3.6d5c8107.chunk.js.map",
+    "main.css": "/freecodecamp-frontend/static/css/main.ce4aceb6.chunk.css",
+    "main.js": "/freecodecamp-frontend/static/js/main.aa7c4a8f.chunk.js",
+    "main.js.map": "/freecodecamp-frontend/static/js/main.aa7c4a8f.chunk.js.map",
+    "runtime-main.js": "/freecodecamp-frontend/static/js/runtime-main.86606d04.js",
+    "runtime-main.js.map": "/freecodecamp-frontend/static/js/runtime-main.86606d04.js.map",
+    "static/js/2.9cc6e4e3.chunk.js": "/freecodecamp-frontend/static/js/2.9cc6e4e3.chunk.js",
+    "static/js/2.9cc6e4e3.chunk.js.map": "/freecodecamp-frontend/static/js/2.9cc6e4e3.chunk.js.map",
+    "static/js/3.a6091a04.chunk.js": "/freecodecamp-frontend/static/js/3.a6091a04.chunk.js",
+    "static/js/3.a6091a04.chunk.js.map": "/freecodecamp-frontend/static/js/3.a6091a04.chunk.js.map",
     "index.html": "/freecodecamp-frontend/index.html",
-    "static/css/main.409cb023.chunk.css.map": "/freecodecamp-frontend/static/css/main.409cb023.chunk.css.map",
-    "static/js/2.e53c13d7.chunk.js.LICENSE.txt": "/freecodecamp-frontend/static/js/2.e53c13d7.chunk.js.LICENSE.txt"
+    "static/css/main.ce4aceb6.chunk.css.map": "/freecodecamp-frontend/static/css/main.ce4aceb6.chunk.css.map",
+    "static/js/2.9cc6e4e3.chunk.js.LICENSE.txt": "/freecodecamp-frontend/static/js/2.9cc6e4e3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.42d5c4d4.js",
-    "static/js/2.e53c13d7.chunk.js",
-    "static/css/main.409cb023.chunk.css",
-    "static/js/main.9b6b3716.chunk.js"
+    "static/js/runtime-main.86606d04.js",
+    "static/js/2.9cc6e4e3.chunk.js",
+    "static/css/main.ce4aceb6.chunk.css",
+    "static/js/main.aa7c4a8f.chunk.js"
   ]
 }
