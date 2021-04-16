@@ -75,6 +75,17 @@
         padding: 0.5em;
     }
 
+    a{
+        color: darken($primary-color,30%);
+        font-weight: 600;
+        &:hover{
+            color: darken($primary-color, 50%);
+        }
+        &:visited{
+            color: darken($primary-color, 40%);
+        }
+    }
+
     scrollbar-width: none;
     -ms-overflow-style: none;
 }

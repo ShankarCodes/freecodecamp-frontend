@@ -10,7 +10,7 @@ You will get instant output on the right.
 Start a line with `#` for largest headings.
 Or with `##` for smaller headings and so on.
 You can also embed HTML tags in markdown like `<a>`, `<b>`, etc.
-You can read more about markdown [here]("https://en.wikipedia.org/wiki/Markdown")
+You can read more about markdown [here](https://en.wikipedia.org/wiki/Markdown)
 
 Use the below code to get the this file from javascript.
 `process.env.PUBLIC_URL + '/sample.md'`
