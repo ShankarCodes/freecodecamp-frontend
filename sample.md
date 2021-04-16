@@ -35,3 +35,31 @@ This is the body of my web page
 
 
 > “Any fool can write code that a computer can understand. Good programmers write code that humans can understand.” – Martin Fowler
+
+
+## Popularity of programming languages
+
+| Apr 2021 | Apr 2020 | Programming Language | Ratings | Change |
+|----------|----------|----------------------|---------|--------|
+| 1        | 2        | C                    | 14.32%  | -2.40% |
+| 2        | 1        | Java                 | 11.23%  | -5.49% |
+| 3        | 3        | Python               | 11.03%  | +1.72% |
+| 4        | 4        | C++                  | 7.14%   | +0.36% |
+| 5        | 5        | C#                   | 4.91%   | +0.16% |
+| 6        | 6        | Visual Basic         | 4.55%   | -0.18% |
+| 7        | 7        | JavaScript           | 2.44%   | +0.06% |
+| 8        | 14       | Assembly language    | 2.32%   | +1.16% |
+| 9        | 8        | PHP                  | 1.84%   | -0.54% |
+| 10       | 9        | SQL                  | 1.83%   | -0.34% |
+| 11       | 19       | Classic Visual Basic | 1.54%   | +0.71% |
+| 12       | 22       | Delphi/Object Pascal | 1.47%   | +0.77% |
+| 13       | 13       | Ruby                 | 1.23%   | -0.02% |
+| 14       | 12       | Go                   | 1.22%   | -0.13% |
+| 15       | 11       | Swift                | 1.19%   | -0.32% |
+| 16       | 10       | R                    | 1.12%   | -0.42% |
+| 17       | 48       | Groovy               | 1.04%   | +0.86% |
+| 18       | 16       | Perl                 | 0.99%   | +0.03% |
+| 19       | 18       | MATLAB               | 0.99%   | +0.06% |
+| 20       | 34       | Fortran              | 0.91%   | +0.58% |
+
+[Data from TIOBE](https://www.tiobe.com/tiobe-index/)
