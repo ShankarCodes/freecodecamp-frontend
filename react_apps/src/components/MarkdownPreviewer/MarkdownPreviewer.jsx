@@ -13,6 +13,8 @@ import { saveAs } from 'file-saver';
 import marked from 'marked';
 const MarkdownPreviewer = () =>{
     const [markdownText, setMarkdownText] = useState('');
+    const [mdExpanded, setmdExpanded] = useState(false);
+    const [rnExpanded, setrnExpanded] = useState(false);
     useEffect(()=>{
         axios
             .get(process.env.PUBLIC_URL + '/sample.md')
@@ -159,8 +161,9 @@ ${marked(markdownText)}
     return<>
     <Navbar/>
     <Fullpage center={false}>
-        <GridLayout>
-        <Pane>
+        <GridLayout expanded={mdExpanded||rnExpanded}>
+          {!rnExpanded
+        ?<Pane>
             <Toolbar>
                 <h1>
                     Input
@@ -169,26 +172,35 @@ ${marked(markdownText)}
                 <button onClick={(event)=>saveText(event,markdownText)} className="btn-left">
                     Save
                 </button>
-                <button>
-                  Reset
-                </button>
-                <button onClick={(event)=>{setMarkdownText('')}} className="btn-right">
+                <button onClick={(event)=>{setMarkdownText('')}}> 
                   Clear
+                </button>
+                <button className="btn-right" onClick={()=>{setmdExpanded(!mdExpanded)}}>
+                  <i class={mdExpanded?"fas fa-compress":"fas fa-expand"}></i>
                 </button>
                 </div>
             </Toolbar>
             <Textarea textid={'editor'} handleOnChange={(event)=>{setMarkdownText(event.target.value)}} value={markdownText}/>
         </Pane>
-        <Pane>
+        :null
+          }
+        {!mdExpanded
+        ?<Pane>
             <Toolbar>
             <h1>Preview</h1>
-                
-                <button onClick={(event)=>saveRendered(event)}>
+               <div>
+                <button onClick={(event)=>saveRendered(event)} className="btn-left">
                     Save
                 </button>
+                <button className="btn-right" onClick={()=>{setrnExpanded(!rnExpanded)}}>
+                  <i class={rnExpanded?"fas fa-compress":"fas fa-expand"}></i>
+                </button>
+              </div> 
             </Toolbar>
             <Preview markdown={markdownText}/>
         </Pane>
+        :null
+        }
         </GridLayout>
     </Fullpage>
     </>
