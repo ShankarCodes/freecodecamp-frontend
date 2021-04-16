@@ -15,7 +15,6 @@ marked.setOptions({
 
 const Preview = ({markdown}) =>{
     let rendered = marked(markdown);
-    console.log(rendered);
     return <div id="preview" className={styles.markdown} dangerouslySetInnerHTML={{'__html':rendered}}/>
 }
 export default Preview;

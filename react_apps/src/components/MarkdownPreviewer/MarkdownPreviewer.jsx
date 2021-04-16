@@ -1,3 +1,4 @@
+import styles from './MarkdownPreviewer.module.scss';
 import React, { useEffect } from 'react';
 import Navbar from '../Navbar';
 import Fullpage from './Fullpage';
@@ -165,15 +166,24 @@ ${marked(markdownText)}
                 <h1>
                     Input
                 </h1>
-                <button onClick={(event)=>saveText(event,markdownText)}>
+                <div>
+                <button onClick={(event)=>saveText(event,markdownText)} className="btn-left">
                     Save
                 </button>
+                <button>
+                  Reset
+                </button>
+                <button onClick={(event)=>{setMarkdownText('')}} className="btn-right">
+                  Clear
+                </button>
+                </div>
             </Toolbar>
             <Textarea textid={'editor'} handleOnChange={(event)=>{setMarkdownText(event.target.value)}} value={markdownText}/>
         </Pane>
         <Pane>
             <Toolbar>
             <h1>Preview</h1>
+                
                 <button onClick={(event)=>saveRendered(event)}>
                     Save
                 </button>
