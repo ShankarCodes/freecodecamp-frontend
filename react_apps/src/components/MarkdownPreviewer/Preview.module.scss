@@ -5,6 +5,8 @@
     border-radius: 10px;
     padding: 1em;    
     color: darken($primary-color,40%);
+    height: 100vh;
+    overflow-y: auto;
     h1 ,
     h2 ,
     h3 ,
@@ -72,4 +74,11 @@
         border-left: 0.5em solid gray;
         padding: 0.5em;
     }
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.markdown::-webkit-scrollbar{
+    width: 0;
+    height: 0;
 }
