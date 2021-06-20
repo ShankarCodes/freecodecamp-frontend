@@ -11,7 +11,6 @@ import axios from 'axios';
 import Toolbar from './Toolbar';
 import { saveAs } from 'file-saver';
 import marked from 'marked';
-
 const MarkdownPreviewer = () =>{
     const [markdownText, setMarkdownText] = useState('');
     const [mdExpanded, setmdExpanded] = useState(false);
@@ -49,23 +48,20 @@ const MarkdownPreviewer = () =>{
     }
     const saveRendered = (event) =>{
         event.preventDefault();
-        let title = markdownText.split('\n',1)[0].replace(/[^\w\s]/gi, '').trim()
         let content = template
           .replace(
             '<title></title>',
-            `<title>${title}</title>`
+            markdownText.split('\n',1)[0].replace(/[^\w\s]/gi, '').trim()
             )
         .replace(
-          '<div class="markdown"></div>',
-          `<div class="markdown">${marked(markdownText)}</div>`
+          '<div class="marked"></div>',
+          (markdownText)
           );
-
- 
         let blob = new Blob([content],
             {
                 type: 'text/plain;charset=utf-8;'
             });
-        saveAs(blob, `${title}.html`)
+        saveAs(blob, `output.html`)
     }
     return<>
     <Navbar/>
@@ -90,7 +86,6 @@ const MarkdownPreviewer = () =>{
                 </div>
             </Toolbar>
             <Textarea textid={'editor'} handleOnChange={(event)=>{setMarkdownText(event.target.value)}} value={markdownText}/>
-            
         </Pane>
         :null
           }

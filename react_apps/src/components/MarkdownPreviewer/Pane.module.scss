@@ -8,7 +8,7 @@
     overflow-y: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    overflow: hidden;
+    overflow: auto;
 }
 .pane::-webkit-scrollbar{
     width: 0;
