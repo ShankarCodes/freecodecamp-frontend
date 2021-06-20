@@ -1,0 +1,117 @@
+@import '../variables.scss';
+*{
+// border : 1px solid rgba(128, 128, 128, 0.281);
+    font-size: 16px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    min-height:80vh;
+    margin: 0px auto;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 60vh;
+    min-width: 60vw;
+    padding: 1.5em;
+    margin: auto;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    box-shadow:2px 0px 6px 2px rgba(255,255,255,0.3);
+    transition: 0.2s;
+    &:hover{
+        box-shadow:2px 0px 10px 3px rgba(255,255,255,0.3);
+    }
+    @media only screen and (min-width: 401px) and (max-width: 960px){
+        width: 80%;
+    }
+    @media only screen and (min-width: 961px) {
+        width: 50%;
+    }
+}
+.quoteText{
+    font-weight: 800;
+    font-size: 2.8em;
+    &::before{
+        content: "“";
+        font-size: larger;
+        color: #242424;
+    }
+    &::after{
+        content: "”";
+        color: #242424;
+    }
+    animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+  from   { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.quoteAuthor{
+    font-weight: 400;
+    font-size: 1.8em;
+    color: gray;
+    &::before{
+        content: "—";
+    }
+    text-align: right;
+    animation: fadeIn 2s;
+}
+.twitterBtn{
+    color: rgb(40, 150 ,230);
+    transition: 0.2s;
+    &:hover{
+        color: darken(rgb(40, 150, 230), 20);
+    }
+}
+.copyBtn{
+    color: #555555;
+    transition: 0.2s;
+    &:hover{
+        color: darken(#555555, 20);
+    }
+}
+.newBtn{
+    color: #242424;
+    transition: 0.2s;
+    &:hover{
+        color: darken(#242424, 20);
+        animation: loadRotate 2s infinite;
+    }
+    transition: 0.3s;
+    &:click{
+    }
+}
+
+@keyframes loadRotate {
+  to {transform: rotate(180deg);}
+}
+hr {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.btns{
+    margin-top: auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.share{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.facebookBtn{
+    color: rgb(40, 150 ,230);
+    display: none;
+}
+.btn{
+    margin-right: 5px;
+}

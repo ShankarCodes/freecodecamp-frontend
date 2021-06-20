@@ -4,6 +4,7 @@ import styles from './Navbar.module.scss';
 const Navbar = () =>{
   return <nav>
       <Link to='/'>Home</Link>
+      <Link to='/quotes'>Quotes</Link>
       <Link to='/mdpreview'>Markdown Previewer</Link>
     </nav>
 }

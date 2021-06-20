@@ -16,6 +16,8 @@ nav{
     border-bottom-right-radius: 5px !important;
     border-right: 1px solid $primary-color !important;
     }
+    border-right: 1px solid $primary-color !important;
+    border-left: 1px solid $primary-color !important;
         padding: 1em;
         text-transform: uppercase;
         background-color: lighten($primary-color, 40%);

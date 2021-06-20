@@ -1,5 +1,6 @@
 import {Switch, Route} from 'react-router-dom';
 import MarkdownPreviewer from './components/MarkdownPreviewer/MarkdownPreviewer';
+import RandomQuoteMachine from './components/RandomQuoteMachine/RandomQuoteMachine';
 import Navbar from './components/Navbar';
 import './App.scss'
 const Home = () => {
@@ -13,6 +14,7 @@ function App() {
       <Switch>
         <Route exact path='/' component={Home} />
         <Route exact path='/mdpreview' component={MarkdownPreviewer} />
+        <Route exact path='/quotes' component={RandomQuoteMachine}/>
       </Switch>
     </div>
   );

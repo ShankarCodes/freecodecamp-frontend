@@ -1,0 +1,17 @@
+@import '../variables.scss';
+.footer{
+    background-color: $primary-color;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    margin-top: auto;
+    color: #141414;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.page{
+    background: #141414;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
