@@ -1,0 +1,23 @@
+.displaybox{
+    background-color: rgba(243, 243, 243, 0.8);
+    padding: 1em;
+    border-radius: 10px;
+    text-align: right;
+    grid-area: disp;
+}
+.result{
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #616161;
+    &::before{
+        content: "=";
+    }
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.expression{
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
