@@ -1,0 +1,37 @@
+@import '../variables.scss';
+.inputbox{
+    outline: none;
+    border: 0px;
+    appearance: none;
+    box-shadow: 1px 5px 18px rgb(21, 0, 48);
+    min-height: 80vh;
+    resize: none;
+}
+.page{
+    min-width: 100vw;
+    min-height: 100vh;
+}
+.content{
+    display: flex;
+    //align-items: center;
+    //justify-items: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sidebyside{
+    display: grid;
+    //background-color: darken($primary-color,30%);
+    grid-template-columns: 1fr;
+    overflow: auto;
+    @media only screen and (min-width: 401px) and (max-width: 960px){
+        grid-template-columns: 1fr;
+        grid-column-gap: 0px;
+    }
+
+    @media only screen and (min-width: 961px){
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1rem;
+    }
+}

@@ -3,7 +3,6 @@ import axios from 'axios';
 import {useState, useEffect} from 'react';
 import styles from './Quotebox.module.scss';
 import uniqueId from 'lodash.uniqueid';
-import './Quotebook.scss'
 
 const copyToClipBoard = (txt) =>{
 navigator.clipboard.writeText(txt).then(function() {

@@ -1,0 +1,38 @@
+.buttonsContainer{
+    display: grid;
+    grid-template-areas: "disp disp disp disp"
+    "clear lparen rparen divide"
+    "seven eight     nine    subtract"
+    "four  five      six     multiply"
+    "one   two       three   add"
+    "zero  decimal   equals  add";
+    width: 30vw;
+    height: 30vw;
+    row-gap: 15px;
+    column-gap: 15px;
+
+} 
+.buttonsContainer > div::before {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8em;
+    font-weight: 600;
+    border: 0px;
+    outline: none;
+    padding: 1em;
+    transition: 0.25s;
+    box-shadow: 0px 3px 6px 2px rgba(0,0,0,0.2);
+    border-radius: 5%;
+    &:hover{
+        //background-color: white !important;
+    box-shadow: 0px 4px 8px 2px rgba(0,0,0,0.3);
+    filter: brightness(80%);
+    
+    }
+}

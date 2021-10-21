@@ -17,3 +17,32 @@ body,html{
     border-bottom-right-radius: 5px !important;
     border-left: 1px solid $primary-color !important;
 }
+
+.central{
+    text-align: center;
+}
+.heading{
+    font-size: 2.8em;
+    font-weight: 600;
+}
+.upper{
+        text-transform: uppercase;
+}
+
+.iconBtn{
+    padding: 10px; 
+    transition: 0.2s;
+    border-radius: 50px;
+    &:hover{
+        background-color: rgb(238, 238, 238);
+    }
+    &:active{
+        background-color: rgb(155, 155, 155);
+    }
+}
+.textBtn{
+    background-color: white;
+    border: none;
+    @extend .iconBtn;
+    font-weight: 600;
+}
