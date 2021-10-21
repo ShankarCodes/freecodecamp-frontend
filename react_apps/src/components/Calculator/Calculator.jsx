@@ -4,13 +4,14 @@ import Navbar from '../Navbar'
 import Numberpad from './Numberpad'
 import Display from './Dipslay'
 const App = () => {
-    const [expression, setExpression] = useState("");
+    const [expression, setExpression] = useState("0");
+    const [result, setResult] = useState("0");
     return <div>
         <Navbar />
         <div className={styles.page}>
             <div className={styles.bg}>
-                <Display expression={expression} result={4} />
-                <Numberpad expression={expression} setExpression={setExpression} />
+                <Display expression={expression} result={result} />
+                <Numberpad expression={expression} setExpression={setExpression} setResult={setResult} />
             </div>
         </div>
     </div>
