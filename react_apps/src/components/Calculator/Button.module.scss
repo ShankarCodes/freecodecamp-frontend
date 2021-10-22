@@ -17,5 +17,6 @@
     }
     &:active{ 
         filter: brightness(50%);
+        outline: 1px solid black;
      }
 }

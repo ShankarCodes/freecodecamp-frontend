@@ -42,7 +42,7 @@ const Numberpad = ({ expression, setExpression, setResult }) => {
                     key={`button-${num}`}
                     value={i}
                     area={num}
-                    onClick={() => { setExpression(validateExpression(expression, String(i)));/* setResult((expression)) */ }}
+                    onClick={() => { let vexp = (validateExpression(expression, String(i))); setExpression(vexp); try { let exp = String(evaluate(vexp)); setResult(exp) } catch { } /* setResult((expression)) */ }}
                     id={num}
                 />)
         }
@@ -52,7 +52,7 @@ const Numberpad = ({ expression, setExpression, setResult }) => {
                     key={`button-${sym}`}
                     value={symbolsRep[i]}
                     area={sym}
-                    onClick={() => { setExpression(validateExpression(expression, symbolsRep[i])); /*setResult((expression))*/ }}
+                    onClick={() => { let vexp = (validateExpression(expression, symbolsRep[i])); setExpression(vexp); try { let exp = String(evaluate(vexp)); setResult(exp) } catch { }  /*setResult((expression))*/ }}
                     id={sym}
                 />)
         }
@@ -60,14 +60,14 @@ const Numberpad = ({ expression, setExpression, setResult }) => {
             key="button-clear"
             value="CL"
             area="clear"
-            onClick={() => setExpression("0")}
+            onClick={() => { setExpression("0"); setResult("0") }}
             id="clear"
         />
         <Button
             key="button-equals"
             value="="
             area="equals"
-            onClick={() => setExpression(String(evaluate(expression)))}
+            onClick={() => { try { let exp = String(evaluate(expression)); setExpression(exp) } catch { } }}
             id="equals"
         />
     </div>

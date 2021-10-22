@@ -6,9 +6,9 @@ import Display from './Dipslay'
 const App = () => {
     const [expression, setExpression] = useState("0");
     const [result, setResult] = useState("0");
-    return <div>
+    return <div onKeyDown={(event) => { console.log(event.key) }}>
         <Navbar />
-        <div className={styles.page}>
+        <div className={styles.page} >
             <div className={styles.bg}>
                 <Display expression={expression} result={result} />
                 <Numberpad expression={expression} setExpression={setExpression} setResult={setResult} />
